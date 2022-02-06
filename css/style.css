@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    height: 100px;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+}
+
+nav ul{
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    margin: 0 0 0 1em;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover{
+    color: #9929DC;
+}
+
+/* ------ HOME ------ */
+
+.home-busca{
+    background: url("../img/banner.jpg");
+    background-size: 100%;
+    text-align: center;
+    padding: 100px;
+}
+
+.tipografia{
+    width: 80%;
+    margin:  0 0 2em 0;
+}
+
+.home-busca select{
+    display: block;
+    width: 40%;
+    padding: 1em 2em;
+    margin: 2em auto;
+    border-radius: 5px;
+    color: #888;
+}
+
+.botao-buscar{
+    padding: 0.75em 1.5em;
+    background: #9929DC;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-buscar:hover{
+    transform: scale(1.05);
+}
+
+/* PRINCIPAL */
+
+.principal{
+    padding: 4em 0;
+    background: #fefefe;
+}
+
+.titulo-principal{
+    margin: 0 0 2em 0;
+    text-align: center;
+    text-shadow: 0 0 2px #000;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.paragrafo-principal{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.principal ul{
+    margin: 1em auto 0;
+    text-align: center;
+}
+
+.principal li{
+    display: inline-block;
+    width: 30%;
+    margin: 2em 1.5%;
+}
+
+.titulo-secundario{
+    margin: 0 0 1em 0;
+    text-shadow: 0 0 1px #000;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #333;
+}
+
+.fundo-itens{
+    margin: 1.5em auto;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    background: #9929DC;
+    border-radius: 50px;
+    transition: 0.25s;
+}
+
+.fundo-itens:hover{
+    color: #000;
+    transform: scale(1.1);
+}
+
+.itens img{
+    width: 30px;
+}
+
+.paragrafo-padrao{
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+/* MISSÃO */
+
+.missao{
+    padding: 4em 0;
+    background: #eee;
+}
+
+.valores{
+    padding: 4em 0;
+    background: #fefefe;
+}
+
+.lista-beneficios{
+    margin: 3em 0 0;
+    line-height: 2em;
+}
+
+.lista-beneficios li{
+    font-size: 1.2em;
+}
+
+.lista-beneficios li::before{
+    content: "✓ ";
+    color: #9929DC;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
