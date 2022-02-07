@@ -171,16 +171,15 @@ nav a:hover{
 
 .conteudo{
     display: inline-block;
+    margin: 50px 0;
     vertical-align: top;
     width: 50%;
 }
 
 .imagem-missao{
     display: inline-block;
-    margin: 0 0 0 5%;
-    width: 45%;
-    border-radius: 0 0 0 30px;
-    box-shadow: 0 0 15px #000;
+    margin: 0 0 0 10%;
+    width: 40%;
 }
 
 .valores{
@@ -190,10 +189,8 @@ nav a:hover{
 
 .imagem-valores{
     display: inline-block;
-    margin: 0 5% 0 0;
-    width: 45%;
-    border-radius: 0 0 30px 0;
-    box-shadow: 0 0 15px #000;
+    margin: 0 10% 0 0;
+    width: 40%;
 }
 
 .lista-beneficios{
