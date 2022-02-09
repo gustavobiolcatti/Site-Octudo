@@ -111,6 +111,14 @@ nav a:hover{
     font-weight: bold;
 }
 
+.titulo-principal::before{
+	content: "- ";
+}
+
+.titulo-principal::after{
+	content: " -";
+}
+
 .titulo-secundario{
     margin: 0 0 1em 0;
     text-shadow: 0 0 1px #000;
