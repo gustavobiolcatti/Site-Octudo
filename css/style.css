@@ -187,6 +187,8 @@ nav a:hover{
     display: inline-block;
     margin: 0 0 0 10%;
     width: 40%;
+    box-shadow: 0 0 15px #000;
+    border-radius: 25px;
 }
 
 .valores{
@@ -198,6 +200,8 @@ nav a:hover{
     display: inline-block;
     margin: 0 10% 0 0;
     width: 40%;
+    box-shadow: 0 0 15px #000;
+    border-radius: 25px;
 }
 
 .lista-beneficios{
