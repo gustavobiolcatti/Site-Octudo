@@ -62,11 +62,6 @@ nav a:hover{
     padding: 150px 0 100px 0;
 }
 
-.tipografia{
-    width: 80%;
-    margin:  0 0 2em 0;
-}
-
 .home-search select{
     display: block;
     width: 100%;
@@ -439,8 +434,16 @@ footer{
 		width: auto;
 	}
 
-    .tipografia{
-        width: 100%;
+    .logo{
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        display: flex;
+        position: static;
+        margin: 2em 0 0 0;
+        justify-content: space-around;
     }
 
     form{
@@ -480,4 +483,35 @@ footer{
 		width: auto;
         padding: 0 2em;
 	}
+
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .items{
+        display: block;
+        width: 80%;
+        margin: 5em auto;
+    }
+
+    .content, .image-mission, .image-values{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .content{
+        margin: 2em 0;
+    }
+
+    .list-enterprises li{
+        margin: 2em;
+    }
+
+    .list-plans li{
+        display: block;
+        width: 80%;
+        margin: 2em auto;
+    }
 }
