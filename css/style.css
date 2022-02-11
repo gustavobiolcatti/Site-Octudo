@@ -230,8 +230,7 @@ nav a:hover{
 
 .enterprises{
     padding: 4em 0;
-    background: url("../img/banner2.jpg");
-    background-size: 100%;
+    background: linear-gradient(45deg, #28003e, #7611b1, #ba5af1, #e2b0ff);
 }
 
 .list-enterprises{
