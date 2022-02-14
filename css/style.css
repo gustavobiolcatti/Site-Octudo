@@ -544,6 +544,14 @@ p a:hover{
 		width: auto;
 	}
 
+    .box-login{
+        width: 65%;
+    }
+
+    .box-register{
+        width: 65%;
+    }
+
     .logo{
         display: block;
         margin: 0 auto;
