@@ -5,6 +5,7 @@ html{
 }
 
 body{
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(45deg, #28003e, #7611b1, #ba5af1, #e2b0ff);
 }
@@ -30,15 +31,17 @@ header{
     margin: 0 auto;
 }
 
-.logo{
-    width: 150px;;
-    top: 20px;
+.box-container{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav ul{
-    position: absolute;
-    top: 5px;
-    right: 0;
+.logo{
+    width: 150px;
 }
 
 nav li{
@@ -144,7 +147,9 @@ nav a:hover{
 }
 
 .principal ul{
-    margin: 1em auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -187,6 +192,10 @@ nav a:hover{
     margin: 50px 0;
     vertical-align: top;
     width: 50%;
+}
+
+.mission .text-default{
+    text-align: initial;
 }
 
 .list-benefits{
@@ -254,10 +263,12 @@ nav a:hover{
 
 .list-plans{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .list-plans li{
-    display: inline-block;
     border-radius: 15px;
     padding: 1em;
     width: 25%;
@@ -276,8 +287,7 @@ nav a:hover{
 }
 
 .basic-plan{
-    vertical-align: top;
-    margin: 12px 1.5em;
+    margin: 0 1.5em;
     border: 4px solid #888;
 }
 
@@ -381,7 +391,7 @@ nav a:hover{
 
 .input-contact{
     display: block;
-    width: 100%;
+    width: -webkit-fill-available;
     padding: 1em 2em;
     margin: 2em 0;
     border: 2px solid #fff;
@@ -434,7 +444,7 @@ footer{
 
 /* LOGIN - REGISTER */
 
-.body-access{
+.container{
     display: flex;
     width: 100%;
     height: 100%;
@@ -532,6 +542,11 @@ p a:hover{
 		width: auto;
 	}
 
+    .box-container{
+        flex-direction: column;
+        width: auto;
+    }
+
     .box-access{
         width: 65%;
     }
@@ -543,9 +558,11 @@ p a:hover{
 
     nav ul{
         display: flex;
-        position: static;
         margin: 2em 0 0 0;
-        justify-content: space-around;
+    }
+
+    .principal ul{
+        flex-direction: column;
     }
 
     form{
@@ -556,7 +573,6 @@ p a:hover{
     .items{
         display: block;
         width: 80%;
-        margin: 5em auto;
     }
 
     .content, .image-mission, .image-values{
@@ -594,7 +610,6 @@ p a:hover{
     .items{
         display: block;
         width: 80%;
-        margin: 5em auto;
     }
 
     .content, .image-mission, .image-values{
