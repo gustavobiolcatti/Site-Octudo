@@ -434,43 +434,30 @@ footer{
 
 /* LOGIN - REGISTER */
 
-.box-login{
-    position: relative;
-    width: 25%;
-    margin: 9em auto;
-    padding: 2em 3em;
-    background: #fff;
-    box-shadow: 0 0 5px 0px #000;
-    border-radius: 15px;
-}
-
-.box-login img{
-    display: block;
-    width: 80%;
-    margin: 1em auto 4em;
-}
-
-.box-login form{
+.body-access{
+    display: flex;
     width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.box-register{
+.box-access{
     position: relative;
     width: 25%;
-    margin: 7em auto;
     padding: 2em 3em;
     background: #fff;
     box-shadow: 0 0 5px 0px #000;
     border-radius: 15px;
 }
 
-.box-register img{
+.box-access img{
     display: block;
     width: 80%;
     margin: 1em auto 4em;
 }
 
-.box-register form{
+.box-access form{
     width: 100%;
 }
 
@@ -540,15 +527,12 @@ p a:hover{
 /* RESPONSIVO */
 
 @media screen and (max-width: 480px) {
+
 	.box{
 		width: auto;
 	}
 
-    .box-login{
-        width: 65%;
-    }
-
-    .box-register{
+    .box-access{
         width: 65%;
     }
 
