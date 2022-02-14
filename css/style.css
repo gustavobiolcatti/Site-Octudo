@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(45deg, #28003e, #7611b1, #ba5af1, #e2b0ff);
 }
 
 ::selection{
@@ -12,7 +17,7 @@ body{
 header{
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     padding: 1.5em 0;
     width: 100%;
     background: #fff;
@@ -224,7 +229,7 @@ nav a:hover{
 /* EMPRESAS */
 
 .enterprises{
-    padding: 4em 0;
+    padding: 3em 0;
     background: linear-gradient(45deg, #28003e, #7611b1, #ba5af1, #e2b0ff);
 }
 
@@ -254,7 +259,6 @@ nav a:hover{
 .list-plans li{
     display: inline-block;
     border-radius: 15px;
-    /*margin: 0 1.5em;*/
     padding: 1em;
     width: 25%;
     transition: 0.5s;
@@ -319,7 +323,6 @@ nav a:hover{
     padding: 0.5em 1em;
     margin: 2em 0 1em;
     background: #9929DC;
-    /*box-shadow: 0 0 15px #000;*/
     border: none;
     border-radius: 10px;
     color: #fff;
@@ -376,7 +379,7 @@ nav a:hover{
     line-height: 1.3em;
 }
 
-.input-default{
+.input-contact{
     display: block;
     width: 100%;
     padding: 1em 2em;
@@ -387,7 +390,7 @@ nav a:hover{
     color: #fff;
 }
 
-.input-default:focus{
+.input-contact:focus{
     outline: none;
     background: #333;
     border: 2px solid #9929DC;
@@ -428,6 +431,113 @@ footer{
 .copyright{
     color: #888;
 }
+
+/* LOGIN - REGISTER */
+
+.box-login{
+    position: relative;
+    width: 25%;
+    margin: 9em auto;
+    padding: 2em 3em;
+    background: #fff;
+    box-shadow: 0 0 5px 0px #000;
+    border-radius: 15px;
+}
+
+.box-login img{
+    display: block;
+    width: 80%;
+    margin: 1em auto 4em;
+}
+
+.box-login form{
+    width: 100%;
+}
+
+.box-register{
+    position: relative;
+    width: 25%;
+    margin: 7em auto;
+    padding: 2em 3em;
+    background: #fff;
+    box-shadow: 0 0 5px 0px #000;
+    border-radius: 15px;
+}
+
+.box-register img{
+    display: block;
+    width: 80%;
+    margin: 1em auto 4em;
+}
+
+.box-register form{
+    width: 100%;
+}
+
+.label-default{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.input-default{
+    display: block;
+    width: -webkit-fill-available;
+    padding: 1em 2em;
+    margin: 1em 0 2.5em 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    box-sizing: content-box;
+}
+
+.input-default:focus{
+    outline: none;
+    border: 2px solid #9929DC;
+    color: #000000;
+}
+
+.signin{
+    padding: 0.5em 1em;
+    width: 100%;
+    margin: 1em 0 1.5em 0;
+    background: #9929DC;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signin:hover{
+    transform: scale(1.05);
+}
+
+.login p{
+    margin: 1.5em 0 0;
+    text-align: center;
+}
+
+p{
+    margin: 1.5em 0 0 0;
+    text-align: center;
+}
+
+p a{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+p a:hover{
+    text-shadow: 0 0 0.5px #9929DC;
+    color: #9929DC;
+}
+
+/* RESPONSIVO */
 
 @media screen and (max-width: 480px) {
 	.box{
