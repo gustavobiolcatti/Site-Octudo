@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+::selection{
+    background: #9929DC;
+    color: #fff;
+}
+
 html{
     height: 100%;
 }
@@ -8,11 +13,6 @@ body{
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(45deg, #28003e, #7611b1, #ba5af1, #e2b0ff);
-}
-
-::selection{
-    background: #9929DC;
-    color: #fff;
 }
 
 header{
@@ -44,12 +44,15 @@ header{
     width: 150px;
 }
 
+nav ul{
+    display: flex;
+}
+
 nav li{
-    display: inline-block;
+    margin: 0 0 0 1em;
 }
 
 nav a{
-    margin: 0 0 0 1em;
     text-decoration: none;
     color: #000;
     font-size: 20px;
@@ -189,7 +192,7 @@ nav a:hover{
 
 .content{
     display: inline-block;
-    margin: 50px 0;
+    margin: auto 0;
     vertical-align: top;
     width: 50%;
 }
@@ -216,7 +219,6 @@ nav a:hover{
 
 .image-mission{
     display: inline-block;
-    margin: 0 0 0 10%;
     width: 40%;
     box-shadow: 0 0 5px #000;
     border-radius: 15px;
@@ -224,7 +226,6 @@ nav a:hover{
 
 .image-values{
     display: inline-block;
-    margin: 0 10% 0 0;
     width: 40%;
     box-shadow: 0 0 5px #000;
     border-radius: 15px;
@@ -243,15 +244,18 @@ nav a:hover{
 }
 
 .list-enterprises{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .list-enterprises li{
-    display: inline-block;
+    width: 50%;
+    text-align: center;
 }
 
 .image-enterprises{
-    width: 50%;
+    width: 30%;
 }
 
 /* PLANOS */
@@ -262,10 +266,10 @@ nav a:hover{
 }
 
 .list-plans{
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .list-plans li{
@@ -540,6 +544,7 @@ p a:hover{
 
 	.box{
 		width: auto;
+        padding: 0 2em;
 	}
 
     .box-container{
@@ -551,18 +556,51 @@ p a:hover{
         width: 65%;
     }
 
-    .logo{
-        display: block;
-        margin: 0 auto;
+    nav{
+        width: 60%;
+        margin: 2em 0 0 0;
     }
 
     nav ul{
-        display: flex;
-        margin: 2em 0 0 0;
+        justify-content: space-between;
+    }
+
+    nav li{
+        margin: 0;
     }
 
     .principal ul{
         flex-direction: column;
+    }
+
+    .list-enterprises{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .list-enterprises li{
+        width: 40%;
+    }
+
+    .list-enterprises li:nth-child(3n){
+        margin-top: 2em;
+    }
+
+    .list-enterprises li:nth-child(4n){
+        margin-top: 2em;
+    }
+
+    .list-plans{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .list-plans li{
+        width: 80%;
+    }
+
+    .list-plans li{
+        margin: 1em 0;
     }
 
     form{
@@ -585,15 +623,7 @@ p a:hover{
         margin: 2em 0;
     }
 
-    .list-enterprises li{
-        margin: 2em;
-    }
-
-    .list-plans li{
-        display: block;
-        width: 80%;
-        margin: 2em auto;
-    }
+    
 }
 
 @media screen and (max-width: 1080px) {
@@ -602,7 +632,12 @@ p a:hover{
         padding: 0 2em;
 	}
 
-    form{
+    .box-container{
+        width: auto;
+        padding: 0 2em;
+    }
+
+    /*form{
         width: 80%;
         margin: 0 auto;
     }
@@ -630,5 +665,5 @@ p a:hover{
         display: block;
         width: 80%;
         margin: 2em auto;
-    }
+    }*/
 }
